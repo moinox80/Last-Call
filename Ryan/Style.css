@@ -33,12 +33,22 @@ header {
 nav {
   flex: 6.5;
 }
+
 .nav-sites {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
 
+#button {
+  flex: 1;
+  text-align: center;
+}
+
+#button img {
+  height: 60px;
+  width: 70px;
+}
 #button:hover {
   cursor: pointer;
 }
