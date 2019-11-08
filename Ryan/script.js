@@ -4,23 +4,12 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("nav").style.top = "0";
   } else {
-    document.getElementById("nav").style.top = "-100px";
+    document.getElementById("nav").style.top = "-105px";
   }
   prevScrollpos = currentScrollPos;
 };
 
-window.onscroll = () => {
-  const nav = document.querySelector("#nav");
-  const slideBar = document.querySelector("#slide-bar");
-  if (this.scrollY <= 10) {
-    nav.className = "";
-    slideBar.className = "";
-  } else {
-    nav.className = "scroll";
-    slideBar.className = "scroll";
-  }
-};
-
+//Code for nav sidebar
 function openNav() {
   document.getElementById("slide-bar").style.width = "300px";
 }
