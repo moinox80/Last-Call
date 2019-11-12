@@ -40,6 +40,7 @@ header {
   box-sizing: border-box;
   padding: 12px 18px;
   box-shadow: 0px 4px 7px #777;
+  z-index: 3;
 }
 
 .nav-sites {
@@ -101,9 +102,10 @@ main {
   position: fixed;
   top: 0;
   right: 0px;
-  background-color: #fff;
+  background-color: #eee;
   transition: 0.6s ease-out;
   padding: 40px 0;
+  box-shadow: -4px 0px 7px #777;
 }
 #slide-bar ul {
   flex-direction: column;
@@ -121,26 +123,4 @@ main {
   color: rgb(224, 203, 63);
   font-family: "Staatliches", cursive;
   font-size: 20px;
-}
-
-#form {
-  background-color: rgb(93, 93, 93);
-}
-
-#starRow {
-  width: 300px;
-  display: flex;
-  flex-direction: row;
-}
-
-#starRow div {
-  flex: 1;
-}
-#starRow img {
-  height: 50px;
-  width: 50px;
-}
-
-body {
-  height: 4000px;
 }
