@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Feedback</title>
     <link
       href="https://fonts.googleapis.com/css?family=Staatliches&display=swap"
       rel="stylesheet"
@@ -30,6 +30,7 @@
     <script src="jquery-3.4.1.min.js"></script>
   </head>
   <body>
+    <!-- Main Navigation Bar -->
     <header id="nav">
       <div class="logo">
         <img src="logo.png" alt="logo" />
@@ -55,12 +56,13 @@
         <img src="hamburgerGold.png" alt="more" />
       </div>
     </header>
+    <!-- Side Navigation Bar -->
     <div id="slide-bar">
       <ul class="nav-sites">
         <li>
-          <span class="index" id="button" onclick="closeNav()"
-            ><b>Close</b></span
-          >
+          <span class="index" id="button" onclick="closeNav()">
+            <b>Close</b>
+          </span>
         </li>
         <li>
           <a class="nav-site" href="imageGallery.html"><b>Image Gallery</b></a>
@@ -79,7 +81,7 @@
         </li>
       </ul>
     </div>
-    <!-- <div id="background"></div> -->
+    <!-- Review Submission Form -->
     <div id="page-content">
       <div id="form">
         <form action="#">
@@ -118,7 +120,8 @@
                 cols="30"
                 rows="6"
                 placeholder="Enter Review Here..."
-              ></textarea>
+              >
+              </textarea>
             </div>
           </div>
           <div class="row">
@@ -133,6 +136,7 @@
         </form>
       </div>
     </div>
+    <!-- Row Containing Mini Sample Reviews -->
     <div id="review-row">
       <div id="review-row-heading">
         <h1>Other Customer Reviews</h1>

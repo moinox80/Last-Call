@@ -1,6 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="css/Style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
     <link
       href="https://fonts.googleapis.com/css?family=Staatliches&display=swap"
       rel="stylesheet"
@@ -21,9 +25,12 @@
       href="https://fonts.googleapis.com/css?family=Staatliches&display=swap"
       rel="stylesheet"
     />
-    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="jquery-3.4.1.min.js"></script>
   </head>
-  <body class="nav-scrolled">
+  <body>
+    <!-- Main Navigation Bar -->
     <header id="nav">
       <div class="logo">
         <img src="logo.png" alt="logo" />
@@ -49,12 +56,13 @@
         <img src="hamburgerGold.png" alt="more" />
       </div>
     </header>
+    <!-- Side Navigation Bar-->
     <div id="slide-bar">
       <ul class="nav-sites">
         <li>
-          <span class="index" id="button" onclick="closeNav()"
-            ><b>Close</b></span
-          >
+          <span class="index" id="button" onclick="closeNav()">
+            <b>Close</b>
+          </span>
         </li>
         <li>
           <a class="nav-site" href="imageGallery.html"><b>Image Gallery</b></a>
@@ -73,14 +81,116 @@
         </li>
       </ul>
     </div>
-
+    <!-- Sections that make up the body of the page -->
+    <div class="image-bg" id="pints101">
+      <div class="content">
+        <div class="content-heading"><h1>Pints 101</h1></div>
+        <div class="content-text">
+          <p>
+          <i>
+            Can't afford a night out at the pub? Having mates round last minute
+            with nothing planned? Or perhaps there is someone you need to
+            impress? Fear not, our experts have you covered! Learn all you need
+            to know to craft the ultimate refreshment and become the master of
+            nights out.
+          </i>
+          </p>
+        </div>
+        <div class="content-button">
+          <a href="pints101.html">
+            <input type="button" value="Learn to brew the perfect pint" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="gradient-bg" id="our-reviews">
+      <div class="content">
+        <div class="content-heading"><h1>Where to go?</h1></div>
+        <div id="rating">
+          <div><img src="starGold.png" alt="gold" /></div>
+          <div><img src="starGold.png" alt="gold" /></div>
+          <div><img src="starGold.png" alt="gold" /></div>
+          <div><img src="starGold.png" alt="gold" /></div>
+          <div><img src="starGold.png" alt="gold" /></div>
+        </div>
+        <div class="content-text">
+          <p>
+          <i>
+            No clue? No problem! Our team has scoured far and wide for the best
+            places to have a pint. Our reviews are detailed and thorough, yet
+            concise enough to consult on the fly. Rating the location, prices
+            and everything in between, you will never again have a dull night!
+          </i>
+          </p>
+          </div>
+        </div>
+        <div class="content-button">
+          <a href="ourReviews.html">
+            <input type="button" id="reviews-button" value="Decide where to go next" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="image-bg" id="image-gallery">
+      <div class="content">
+        <div class="content-heading"><h1>Picture Perfect</h1></div>
+        <div class="content-text">
+          <p>
+          <i>
+            Worried you will pick the wrong place? See for yourself where the
+            night can take you in our selection of hand-picked locales. Drink in
+            style as we show you some of the most breathtaking places around,
+            because a little style points never hurt anybody.
+          </i>
+          </p>
+        </div>
+        <div class="content-button">
+          <a href="imageGallery.html">
+            <input type="button" value="See what you're missing" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="gradient-bg" id="podcasts">
+      <div class="content">
+        <div class="content-heading"><h1>Sounds Good</h1></div>
+        <div class="content-text">
+          <p>
+          <i>
+            Hear what our members have to say about where they have been, the
+            highlights of our veterans and the top places they recommend. We
+            record podcasts regularly to keep up to date with the trending
+            drinks, so sit back, relax and listen to what's trending near you.
+          </i>
+          </p>
+        </div>
+        <div class="content-button">
+          <a href="podcasts.html">
+            <input type="button" value="Have A Listen" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="image-bg" id="maps">
+      <div class="content">
+        <div class="content-heading"><h1>Places Near You</h1></div>
+        <div class="content-text">
+          <p>
+          <i>
+            See what's on offer nearby. Stick with the reliable, or venture
+            somewhere new. Whatever you decide, know that all the places shown
+            on the map have been visited and approved by us. And did we mention
+            our maps are ideal for pub crawls?
+          </i>
+          </p>
+        </div>
+        <div class="content-button">
+          <a href="maps.html">
+            <input type="button" value="Make Plans Now" />
+          </a>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
-  <main>
-    <iframe
-      src="https://www.google.com/maps/d/embed?mid=1Di6F11bHCLeLe30f7Mylck5DbeGKwVBp"
-      width="1000"
-      height="600"
-    ></iframe>
-  </main>
 </html>
