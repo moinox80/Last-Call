@@ -11,6 +11,7 @@
   font-family: "Pacifico", cursive;
   text-align: center;
   justify-content: space-around;
+  font-size: 1vw;
 }
 
 header {
@@ -123,4 +124,34 @@ main {
   color: rgb(224, 203, 63);
   font-family: "Staatliches", cursive;
   font-size: 20px;
+}
+
+footer {
+  background-color: #eee;
+  padding: 12px 30px;
+  box-shadow: 0px -4px 7px #777;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer-text {
+  font-family: "Staatliches", cursive;
+  color: rgb(93, 93, 93);
+  flex: 4;
+}
+
+#link-container {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+}
+
+#link-container * {
+  flex: 1;
+}
+.social-link img {
+  width: 50px;
+  height: 50px;
 }
