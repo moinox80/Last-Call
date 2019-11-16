@@ -1,0 +1,47 @@
+----- HTML (index.html) -----
+<div class="gradient-bg" id="about-us">
+      <div class="content">
+        <div class="content-heading"><h1>Who Are We?</h1></div>
+        <div class="content-text">
+          <p>
+            <i>
+              The Pint Society is dedicated to recommending the best outlets for
+              ice cold beverages and nights out. We are committed to finding the
+              best quality bars, the top drinks to discover, the lowest costs
+              and everything in-between. We frequently record podcasts and write
+              reviews on our experiences, with the highlights making it to our
+              image gallery. Click below for more.
+            </i>
+          </p>
+        </div>
+        <div class="content-button">
+          <a href="ourmembers.html">
+            <input type="button" value="Our Members" />
+          </a>
+        </div>
+      </div>
+    </div>
+----- CSS (index.css) -----
+#about-us {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(140, 124, 80) 0%,
+    rgb(224, 203, 63) 50%,
+    rgb(140, 124, 80) 100%
+  );
+}
+
+#pints101 {
+  background: linear-gradient(
+      to bottom,
+      rgb(140, 124, 80) 0%,
+      rgba(140, 124, 80, 0.3) 10%,
+      rgba(140, 124, 80, 0.3) 90%,
+      rgb(140, 124, 80) 100%
+    ),
+    url("../homepageimgs/brewPints.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
